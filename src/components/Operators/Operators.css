@@ -1,0 +1,11 @@
+.operators{
+
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-content: center;
+    width: 50px;
+    height: 50px;
+    background-color:#fc9c17;
+    border: 1px solid gray;
+}

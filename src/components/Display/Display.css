@@ -1,0 +1,13 @@
+.display{
+    display: flex;
+    justify-content: flex-end;
+    align-content: stretch;
+    margin: 0;
+    font-size: 48px;
+    width: 200px;
+    height: 75px;
+    border: 1px solid gray;
+    background-color: black;
+    color: white;
+    
+}
