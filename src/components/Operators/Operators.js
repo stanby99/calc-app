@@ -15,11 +15,11 @@ class Operators extends React.Component{
     render(){
         return(
             <div>
-                <button onClick={() => this.inputOp('/')} className='operators'>÷</button>
-                <button onClick={() => this.inputOp('*')} className='operators'>×</button>
-                <button onClick={() => this.inputOp('-')} className='operators'>-</button>
-                <button onClick={() => this.inputOp('+')} className='operators'>+</button>
-                <button onClick={() => this.inputOp("=")} className='operators'>=</button>
+                <button onClick={() => this.props.operatorsValue('/')} className='operators'>÷</button>
+                <button onClick={() => this.props.operatorsValue('*')} className='operators'>×</button>
+                <button onClick={() => this.props.operatorsValue('-')} className='operators'>-</button>
+                <button onClick={() => this.props.operatorsValue('+')} className='operators'>+</button>
+                <button onClick={() => this.props.operatorsValue("=")} className='operators'>=</button>
             </div>
         )
     }

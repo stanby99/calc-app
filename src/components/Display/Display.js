@@ -1,12 +1,15 @@
 import React from 'react';
 import './Display.css';
+import { Textfit } from 'react-textfit';
 
 
 class Display extends React.Component{
 
     render(){
+        let breakdown = this.props.value
+        breakdown = breakdown.toLocaleString()
         return(
-            <div className='display'>0</div>
+            <Textfit className='display' mode="multi">{breakdown}</Textfit>      
         )
     }
 }

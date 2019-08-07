@@ -8,4 +8,8 @@
     height: 50px;
     background-color:#fc9c17;
     border: 1px solid gray;
+    cursor: pointer;
+    outline: none;
+    font-size: 20px;
+    color: white;
 }
