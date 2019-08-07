@@ -12,7 +12,6 @@ class App extends React.Component{
       result: 0,
       operand: false
   }
-
   calc() {
     let result = 0;
     let { values } = this.state;
@@ -39,7 +38,6 @@ class App extends React.Component{
     })
   }
   calculate=(value) => {
-    
     console.log(value)
     if(/[0-9.]/.test(value)) {
       if(value === '.' && /\./.test(this.state.buffer))

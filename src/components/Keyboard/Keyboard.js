@@ -22,7 +22,6 @@ class Keyboard extends React.Component{
         this.setState({operator:resivedValue},
             ()=>{this.props.sendValue(this.state.operator)})
     }
-
     render(){
         return(
             <div className='keyboard'>

@@ -2,11 +2,6 @@ import React from 'react';
 import './Mathoperator.css';
 
 class Mathoperator extends React.Component{
-    // constructor(props) {
-    //     super(props)
-    //     this.state = {
-    //     };
-    // }
     inputMath(val) {
         console.log(val)
     }

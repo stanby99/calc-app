@@ -1,21 +1,11 @@
 import React from 'react';
-
 import './Button.css';
 
-
 class Button extends React.Component{
-    constructor(props) {
-        super(props)
-        this.state = {
-            
-        };
-        
-    }
-     inputDigital(val) {
+   
+    inputDigital(val) {
         console.log(val)
-        
     }
-    
     render(){
         return(
             <div>
