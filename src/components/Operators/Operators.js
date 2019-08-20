@@ -2,9 +2,7 @@ import React from 'react';
 import './Operators.css';
 
 class Operators extends React.Component{
-    inputOp(val) {
-        console.log(val)
-    }
+   
     render(){
         return(
             <div>

@@ -40,19 +40,21 @@ class App extends React.Component{
   calculate=(value) => {
     console.log(value)
     if(/[0-9.]/.test(value)) {
-      if(value === '.' && /\./.test(this.state.buffer))
+      if(value === '.' && /\./.test(this.state.buffer)) {
         return;
+      }
       this.setState({
         buffer: this.state.buffer + value
       })
     }
     if(['-', '+', '/', '*', '='].indexOf(value) > -1) {
       this.setState(prevState => {
-        if(value !== '=')
-          prevState.operand = value
+        if(value !== '=') {
+          prevState.operand = value;
+        }
         if(this.state.buffer) {
-          prevState.values.push(parseFloat(this.state.buffer))
-          prevState.buffer = ''
+          prevState.values.push(parseFloat(this.state.buffer));
+          prevState.buffer = '';
         }
         return prevState
       }, () => {
