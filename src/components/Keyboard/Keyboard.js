@@ -1,6 +1,6 @@
 import React from 'react';
 import './Keyboard.css';
-import Button from '../Button'
+import Buttons from '../Buttons'
 import Mathoperator from '../Mathoperator'
 import Operators from '../Operators';
 
@@ -10,15 +10,15 @@ class Keyboard extends React.Component{
         mathOperator: "",
         operator: ""
     }
-    inputMath =(resivedValue)=> {
+    setMath =(resivedValue)=> {
         this.setState({mathOperator:resivedValue},
         ()=>{this.props.sendValue(this.state.mathOperator)})
     }
-    inputDigital =(resivedValue)=> {
+    setDigital = (resivedValue)=> {
         this.setState({number:resivedValue},
         ()=>{this.props.sendValue(this.state.number)})
     }
-    inputOp =(resivedValue)=> {
+    setOperator = (resivedValue)=> {
         this.setState({operator:resivedValue},
             ()=>{this.props.sendValue(this.state.operator)})
     }
@@ -26,10 +26,10 @@ class Keyboard extends React.Component{
         return(
             <div className='keyboard'>
                 <div>
-                  <Mathoperator mathValue={this.inputMath}/>
-                  <Button  buttonValue={this.inputDigital}/>
+                  <Mathoperator mathValue={this.setMath}/>
+                  <Buttons  buttonValue={this.setDigital}/>
                 </div>
-                <Operators  operatorsValue={this.inputOp}/>
+                <Operators  operatorsValue={this.setOperator}/>
             </div>
         )
     }

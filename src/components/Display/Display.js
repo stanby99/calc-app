@@ -4,10 +4,9 @@ import { Textfit } from 'react-textfit';
 
 class Display extends React.Component{
     render(){
-        let breakdown = this.props.value
-        breakdown = breakdown.toLocaleString()
+        const { value } = this.props
         return(
-            <Textfit className='display' mode="multi">{breakdown}</Textfit>      
+            <Textfit className='display' mode="multi">{value.toLocaleString()}</Textfit>      
         )
     }
 }

@@ -2,9 +2,7 @@ import React from 'react';
 import './Mathoperator.css';
 
 class Mathoperator extends React.Component{
-    inputMath(val) {
-        console.log(val)
-    }
+    
     render(){
         return(
             <div>
